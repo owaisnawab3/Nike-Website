@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: bold;
+    src: url(../font/Poppins/Poppins-Bold.ttf);
+}
+
+/* //==============Custom-Scroll-Bar//==================//*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--grey);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--red);
+    border-radius: 50px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --red : #D01C28;
+    --text-color : #000000;
+    --grey : #5A5959;
+}
+
+.logo img{
+    width: 60px;
+}
+
+/* //====================Header-Section===================// */
+
+header{
+    width: 100%;
+    height: 72px;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.nav_bar ul{
+    display: flex;
+}
+
+.nav_bar ul li a{
+    color: var(--text-color);
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.btn a{
+    all: unset;
+    padding: 6px 16px;
+    background: var(--red);
+    height: 32px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* //====================Hero-Section===================// */
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    height: calc(100vh - 72px);
+    margin-top: 60px;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-section h1{
+    font-size: 100px;
+    font-weight: 800;
+    font-family: bold;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.right-section p{
+    max-width: 550px;
+    color: var(--grey);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button a{
+    color: #fff;
+    background: var(--red);
+    padding: 6px 20px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.button .category{
+    background: transparent;
+    color: var(--grey);
+    border: 1px solid var(--grey);
+}
+
+.shopping-icons{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.shopping-icons .amazon{
+    width: 100px;
+}
+
+.shopping-icons img{
+    width: 35px;
+}
+
+.nike_image img{
+    width: 650px;
+}
